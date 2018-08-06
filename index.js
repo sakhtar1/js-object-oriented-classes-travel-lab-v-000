@@ -24,7 +24,7 @@ class Driver {
   const distA = Math.abs(eastWest.indexOf(this.beginningLocation.horizontal) - eastWest.indexOf(this.endingLocation.horizontal));
     const distB = Math.abs(this.beginningLocation.vertical - this.endingLocation.vertical)
     return distA + distB;
-  }
+  
    estimatedTime(peak) {
     if (peak){
       return this.blocksTravelled()/2
