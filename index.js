@@ -22,8 +22,8 @@ class Driver {
     blocksTravelled() {
     let eastWest =  ['1st Avenue', '2nd Avenue', '3rd Avenue', 'Lexington Avenue', 'Park', 'Madison Avenue', '5th Avenue']
 
-    const distA = Math.abs((eastWest.indexOf(this.endingLocation.horizontal)) - (eastWest.indexOf(this.beginningLocation.horizontal)));
-    const distB = Math.abs((eastWest.indexOf(this.endingLocation.vertical)) - (eastWest.indexOf(this.beginningLocation.vertical)));
+    const distA = Math.abs(eastWest.indexOf(this.endingLocation.horizontal) - eastWest.indexOf(this.beginningLocation.horizontal));
+    const distB = Math.abs(eastWest.indexOf(this.endingLocation.vertical) - (eastWest.indexOf(this.beginningLocation.vertical)));
     return distB + distA;
   }
    estimatedTime(peak) {
