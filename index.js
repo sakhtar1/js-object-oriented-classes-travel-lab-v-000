@@ -4,10 +4,9 @@ class Driver {
   this.startDate = new Date(startDate)
   }
 
-  yearsExperienceFromBeginningOf(lastDate) {
-    const date = new Date()
-    date.setYear(lastDate)
-    return Math.abs(this.startDate.getFullYear() - date.getFullYear());
+  yearsExperienceFromBeginningOf(year) {
+    const date = new Date(year, 1, 1)
+    return date.getFullYear() - this.startDate.getFullYear()-1);
   }
 
 }
