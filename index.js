@@ -17,3 +17,4 @@ class Driver {
     this.beginningLocation = beginningLocation
     this.endingLocation = endingLocation
     }
+}
