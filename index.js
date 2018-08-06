@@ -22,7 +22,7 @@ class Driver {
     blocksTravelled() {
     let eastWest =  ['1st Avenue', '2nd Avenue', '3rd Avenue', 'Lexington Avenue', 'Park', 'Madison Avenue', '5th Avenue']
   
-  const distA = Math.abs(eastWest.indexOf(this.beginningLocation.horizontal) - eastWest.indexOf(this.endingLocation.horizontal));
+    const distA = Math.abs(eastWest.indexOf(this.beginningLocation.horizontal) - eastWest.indexOf(this.endingLocation.horizontal));
     const distB = Math.abs(this.beginningLocation.vertical - this.endingLocation.vertical)
     return distA + distB;
   }
